@@ -24,3 +24,7 @@ Load from csv file data (need to start cqlsh from folder where file is). IMPORTA
 ```
 COPY videos FROM 'videos.csv' WITH HEADER=true; #HEADER=true means skip header when reading
 ```
+# 3. Check table characteristics
+```
+DESCRIBE TABLE videos;
+```
