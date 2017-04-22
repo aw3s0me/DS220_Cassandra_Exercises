@@ -34,12 +34,12 @@ CREATE TYPE video_encoding (
 ALTER TABLE videos ADD encoding FROZEN<video_encoding>;
 ```
 
-#6. Copy new data
+# 6. Copy new data
 ```
 COPY videos (video_id, encoding) FROM 'videos_encoding.csv' WITH HEADER=true;
 ```
 
-#7. Query data (first 10 rows)
+# 7. Query data (first 10 rows)
 No FIRST keyword, use LIMIT instead
 ```
 SELECT * FROM videos LIMIT 10;
