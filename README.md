@@ -3,6 +3,8 @@
 If key is not unique, add additional clustering keys, etc
 
 So we could avoid upserts problem
+
+* see exercise 7
 ## 2. Even if there is no entry in table, update can add new entry
 ## 3. Clustering keys
 Roughly speaking they automatically add GROUP BY + ORDER BY
