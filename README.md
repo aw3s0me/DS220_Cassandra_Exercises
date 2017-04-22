@@ -15,3 +15,14 @@ Cells consisting of key-values
 ## 7. Counters have own type.
 Need them to avoid concurrency problem when reading and writing counter value.
 ## 8. To execute cql - use SOURCE command
+## 9. Order of primary key columns MATTER
+```
+PRIMARY KEY ((col1), col2, col3)
+```
+is not the same with
+```
+PRIMARY KEY ((col1), col3, col2)
+```
+## 10. Order of columns is important for COPY command
+Need to check if order of columns in csv is the same with order of column
+### Check order column by using DESCRIBE TABLE command
